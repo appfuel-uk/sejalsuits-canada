@@ -1,4 +1,3 @@
-const path = require(`path`);
 require('dotenv').config();
 const config = require('./src/config/index.js');
 
@@ -21,14 +20,6 @@ module.exports = {
       options: {
         color: config.themeColor,
         showSpinner: false,
-      },
-    },
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: path.join(__dirname, `data`),
       },
     },
     {
